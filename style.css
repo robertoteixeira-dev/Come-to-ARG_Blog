@@ -2,13 +2,15 @@
     margin:0px;
     padding:0px;
     text-decoration:none;
+    
+    
 }
 
 #container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 700px 1fr 150px 1fr 300px;
-    width:90%;
+    grid-template-rows: 500px 1fr 150px 1fr 300px;
+    width:80%;
     grid-template-areas: 
     "header header header header header"
     "destination destination destination destination destination"
@@ -17,41 +19,81 @@
     "footer footer footer footer footer";
     height:2000px;
     margin:0px auto;
-    border:1px solid #ccc;
+    background:rgba(250, 248, 248, 0.75);
+   
 }
 
 #header{
     grid-area:header;
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     color:white;
-    background-color: black;
+    background-image: url("Img/obelisco2.jpg");
+    background-size:cover;
+    background-repeat:repeat;
+    background-position: center center;
+    
+}
+
+#header h1{
+    justify-content:center;
+    text-align:center;
+    text-shadow: 0px 0px 5px gray;
+    font-size:35px;
+    text-decoration:underline;
+    padding:150px;
+    
+}
+
+#header .search{
+    
+    text-align:center;
+    margin:10px;
+    justify-content:center;
+    height:80px;
+    background-color:#ccc;
+    margin-top:10px;
+    margin-bottom:10px;
+    
+    
+    
     
 }
 
 #logo-social{
     display:block;
-    flex-grow:1;
+    
     flex-basis:65%;
     justify-content: flex-start;
+
+    flex-grow:1;
+    flex-basis:65%;
+    padding:10px;
+    margin-left:20px;
+    
     
 }
 
 .logo{
+    text-align:start;
+    align-items:flex-start;
+    justify-content: flex-start;
     
 }
 
 .social-media{
+    text-align:start;
+    align-items:flex-start;
+    justify-content: flex-start;
 }
 
 #menu{
-    flex-grow:1;
-    flex-basis:30%;
+    display:flex;
+    flex-basis:40%;
     justify-content: flex-end;
     padding-right:20px;
     height:50px;
+    
     
     
 }
@@ -60,15 +102,20 @@
     display:grid;
     grid-template-columns: repeat(5, 1fr);
     list-style:none;
-    margin:0px auto;
-    padding:0px;
-    height:100%;
     text-align:center;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
  #menu > ul > li{
-    line-height:50px;
+    height:40px;
+    line-height:40px;
     transition: all 300ms;
+
+   
     
     
 }
@@ -83,6 +130,10 @@
     font-size:14px;
     color: rgb(170, 168, 168);
     text-transform:uppercase;
+   
+    display:flex;
+    flex-direction: row;
+
     
 }
 
@@ -119,28 +170,63 @@
 }
 
 #menu > ul > li:hover > ul > li{
-    line-height:50px;
+   
     transition: all 300ms;
     border-bottom:1px solid gray;
    
-   
-
 }
+
+
 
 #content{
     display:grid;
 }
 
 #destination{
-  
     grid-area:destination;
-    background-color: blue;
+    
 }
 
-#text{
+#destination h2{
+    margin-top:60px;
+    margin-bottom:30px;
+    
+}
 
+.card-1{
+    width:300px;
+    height:350px;
+    background-image: url("Img/Bariloche-Resort.jpeg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    overflow:hidden;
+}
+
+input[type="button"]{
+    background-color:blue;
+    border-radius:10px;
+    border:1px solid white;
+    width:100px;
+    height:30px;
+    
+    transition:all 300ms;
+    margin:10px;
+    color:white;
+    align-self:flex-end;
+
+}
+input[type="button"]:hover{
+    color:blue;
+    background-color:lightblue;
+    display:block;
+}
+
+
+#text{
+    
     grid-area:text;
-    background-color: yellow;
+    text-align:center;
+    
 }
 
 #articles{
