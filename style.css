@@ -45,16 +45,16 @@
     
 }
 
-#header .search{
+.search{
     
     text-align:center;
     margin:10px;
     justify-content:center;
     height:80px;
-    background-color:#ccc;
+    background-color:rgba(70, 69, 69, 0.836);
     margin-top:10px;
     margin-bottom:10px;
-    
+    opacity:1;
     
     
     
@@ -185,40 +185,80 @@
 #destination{
     grid-area:destination;
     
+    
+   
+    
+    
 }
 
 #destination h2{
     margin-top:60px;
     margin-bottom:30px;
+    text-align:center;
+    
     
 }
 
 .card-1{
+    display:inline-flex;
     width:300px;
     height:350px;
     background-image: url("Img/Bariloche-Resort.jpeg");
     background-size:cover;
     background-repeat:no-repeat;
     overflow:hidden;
+    margin-right:20px;
+    margin-left:10px;
+   
 }
 
+.card-2{
+    display:inline-flex;
+    width:300px;
+    height:350px;
+    background-image: url("Img/BuenosAires.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    overflow:hidden;
+    margin-right:20px;
+    margin-left:10px;
+   
+}
+
+.card-3{
+    display:inline-flex;
+    width:300px;
+    height:350px;
+    background-image: url("Img/Blog-Catena-Zapata-Vineyard-Andes-Mendoza.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    overflow:hidden;
+    margin-right:20px;
+    margin-left:10px;
+    
+}
+
+
 input[type="button"]{
-    background-color:blue;
+    background-color:#E90E35;
     border-radius:10px;
     border:1px solid white;
-    width:100px;
+    width:120px;
     height:30px;
     
     transition:all 300ms;
     margin:10px;
     color:white;
     align-self:flex-end;
+    margin-left:85px;
+    
 
 }
 input[type="button"]:hover{
     color:blue;
     background-color:lightblue;
     display:block;
+    transform: scale(1.2, 1.2);
 }
 
 
