@@ -16,8 +16,8 @@
 
             <nav id="menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Destinations</a>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#destination">Destinations</a>
                         <ul>
                             <li><a href="#">Buenos Aires</a></li>
                             <li><a href="#">Bariloche</a></li>
@@ -26,8 +26,8 @@
                     </li>
                     <p class="icon">?</p>
 
-                    <li><a href="#">Articles</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#articles">Articles</a></li>
+                    <li><a href="#aside">Contact</a></li>
                 </ul>
             </nav>
 
@@ -42,7 +42,7 @@
 
      
         <section id="destination">
-            <h2>Choose your destination, explore this beautiful country</h2>
+            <h2>Choose your destination and explore this beautiful country</h2>
 
             <div class="card-1">
                 <input type="button" href="#" value="Go to Bariloche!">
@@ -78,6 +78,7 @@
         <section id="articles">
             <h2>Articles</h2>
             <div class="clearfix"></div>
+
             <article class="article">
                 
                 <img src="Img/La boca 01.jpg" class="image" alt="La Boca" />
@@ -86,7 +87,6 @@
                     <a href="#">5 places in Buenos Aires that you NEED to visit</a>
                 </h4>
 
-                
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum vitae erat non
                     eleifend. Aliquam dui est, aliquam id nisi ut, suscipit finibus leo. 
@@ -106,14 +106,13 @@
                     <a href="#">New requirements to travel to Argentina</a>
                 </h4>
 
-                
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum vitae erat non
                     eleifend. Aliquam dui est, aliquam id nisi ut, suscipit finibus leo. 
                 </p>
 
                 <div class="data">
-                    <span>Published: May 12,2021/ Roberto Teixeira </span>
+                    <span>Published: Nov 10,2021/ Roberto Teixeira </span>
                 </div>
                 
             </article>
@@ -123,28 +122,64 @@
                 <img src="Img/La boca 01.jpg" class="image" alt="La Boca" />
 
                 <h4>
-                    <a href="#">Titulo del artículo</a>
+                    <a href="#">10 best foods of Argentina</a>
                 </h4>
 
-                
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum vitae erat non
                     eleifend. Aliquam dui est, aliquam id nisi ut, suscipit finibus leo. 
                 </p>
 
                 <div class="data">
-                    <span>Published: May 12,2021/ Roberto Teixeira </span>
+                    <span>Published: Jan 20,2021/ Roberto Teixeira </span>
                 </div>
                 
             </article>
-            <h4 id="more"><a href="#">See more</a></h4>
-           
 
-          
+            <div id="more">
+                <h4><a href="#">See more</a></h4>
+            </div>
+           
         </section>
 
         <aside id="aside">
-            <h2>Talk to us</h2>
+            <h3>Talk to us</h3>
+            <form id="contact" class="contact-box">
+
+                <input type="text" placeholder="You name" />
+                <input type="email" placeholder="Email" />
+                <textarea id="message" placeholder="How can we help you?"></textarea>
+                <input type="submit" value="Send">
+
+            </form>
+            
+            <h3>Social Media</h3>
+            <div id="social" class="social-box">
+
+                <div class="twitter">
+                    <a href="#" class="icon">t</a>
+                    <p class="overlay">
+                        Twitter
+                    </p>
+ 
+                </div>
+
+                <div class="youtube">
+                    <a href="#" class="icon">y</a>
+                    <p class="overlay">
+                        Youtube
+                    </p>
+                </div>
+
+                <div class="facebook">
+                    <a href="#" class="icon">f</a>
+                    <p class="overlay">
+                        Facebook
+                    </p>
+                </div>
+                
+            </div>
+
         </aside>
 
         <footer id="footer">

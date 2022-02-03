@@ -64,15 +64,12 @@
     background-size:cover;
     background-repeat:no-repeat;
     background-position: center center;
-   
-    
 }
 
 .icon{
     font-family: "WebSymbolsRegular";
     font-size:30px;
     padding-bottom:10px;
-
     animation-name: move-icon;
     animation-duration: 1s;
     animation-iteration-count:infinite;
@@ -127,9 +124,8 @@
     border:1px solid #ccc;
     background:white;
     
-    
-    
 }
+
 .search input[type="text"]:focus{
     color:#555;
     font-size:15px;
@@ -170,18 +166,13 @@
     
 }
 
-.social-media{
-    text-align:start;
-    align-items:flex-start;
-    justify-content: flex-start;
-}
-
 #menu{
     display:flex;
     flex-basis:100%;
     justify-content: center;
     padding-right:20px;
     height:50px;
+    
     
 }
 
@@ -212,27 +203,23 @@
     transition: all 300ms;
     text-decoration:none;
     text-shadow: 0px 0px 4px #444;
-    
-    
-  
 }
 
 #menu > ul > li > a:hover{
     color:#37bcf9;
     transform: scale(1.2, 1.2);
-    
 }
 
 #menu > ul > li > ul{
     display:none;
     position:absolute;
     z-index:1;
+    list-style:none;
 }
 
 
 #menu > ul > li:hover > ul{
     display:block;
-    
 }
 
 #menu > ul > li:hover > ul > li{
@@ -249,13 +236,10 @@
     transition: all 300ms;
     text-shadow: 0px 0px 4px #444;
     text-decoration:none;
-   
-    
 }
 
 #menu > ul > li:hover > ul > li a:hover{
     color:#37bcf9;
-   
 }
 
 
@@ -268,15 +252,12 @@
 
 #destination{
     grid-area:destination;
-    
-    
-   
-    
+    margin-top:27px;
     
 }
 
 #destination h2{
-    margin-top:60px;
+    margin-top:50px;
     margin-bottom:30px;
     text-align:center;
     font-size:25px;
@@ -284,9 +265,7 @@
     letter-spacing:3px;
     text-shadow:0px 0px 4px white;
     color:#E90E35;
-    
-    
-    
+     
 }
 
 .card-1{
@@ -325,7 +304,6 @@
     overflow:hidden;
     margin-right:20px;
     margin-left:10px;
-    
 }
 
 
@@ -335,21 +313,17 @@ input[type="button"]{
     border:1px solid white;
     width:155px;
     height:30px;
-    
     transition:all 300ms;
     margin:10px;
     color:white;
     align-self:flex-end;
     margin-left:75px;
-
     font-size:16px;
     font-family: 'TrebuchetMS';
     font-weight:bold;
     cursor:pointer;
-  
-    
-
 }
+
 input[type="button"]:hover{
     color:#37bcf9;
     background-color:white;
@@ -359,17 +333,14 @@ input[type="button"]:hover{
 
 
 #text{
-    
     grid-area:text;
     text-align:center;
+    margin:20px;
     
 }
 
 #articles{
     grid-area:articles;
-}
-
-.article{
     
 }
 
@@ -390,10 +361,8 @@ input[type="button"]:hover{
 }
 
 #articles article{
-    
-
     width:90%;
-    height:auto;
+    height:150px;
     border:1px solid #ccc;
     margin:20px;
     overflow:hidden;
@@ -403,16 +372,15 @@ input[type="button"]:hover{
     color:black;
     box-shadow:1px 1px 2px solid #ddd;
     margin-left:20px;
-    
 }
 
 #articles article h4{
-   
     font-size:18px;
     margin:3px;
-    float:right;
-    
-   
+    text-align:left;
+    margin-left:5px;
+    display:block; 
+    transition:all 300ms;
 }
 
 #articles article h4 a{
@@ -420,42 +388,82 @@ input[type="button"]:hover{
     color:#00538c;
 }
 
+#articles article h4 a:hover{
+    color:#E90E35;
+}
+
 #articles article p{
     margin-top:10px;
     margin-bottom:10px;
     font-size:15px;
-    float:none;
-
-    float:left;
-
-  
-   
-   
+    display: block;  
 }
+
 #articles .data{
-    
+    display:block;
     background:#393d3f;
     color:white;
     height:20px;
     line-height:20px;
-    margin:-10px;
     font-size:13px;
-    border-radius: 0px 0px 0px 5px;
+    border-radius: 5px 0px 0px 0px;
+    width:250px;
+    float:inline-end;
+    margin-right:-10px;
+}
+
+#articles .data span{
+    margin:5px;
 }
 
 .image{
+    float:left;
     width:250px;
     height:150px;
+    margin-right:5px;
+}
+
+#more{
+    text-align:center;
+    margin:10px;
+    margin-top:-10px;
+    animation-name: Move-more;
+    animation-duration: 1s;
+    animation-iteration-count:infinite;
+}
+#more a{
+    color:#E90E35;
+    font-family: 'BebasNeue';
+    font-size:20px;
+    letter-spacing:3px;
+   
+}
+
+@keyframes Move-more{
+0%{
+    transform: translateY(0%);
+}
+
+50%{
+    transform: translateY(5px);
+}
+
+100%{
+    transform: translateY(0%);
+}
+}
+
+#more a:hover{
+    text-decoration:underline;
 }
 
 #aside{
-   
     grid-area:aside;
     background-color:#26353c81;
+  
 }
 
 #footer{
-    
     grid-area:footer;
     background-color: gray;
 }
