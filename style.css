@@ -2,14 +2,42 @@
     margin:0px;
     padding:0px;
     text-decoration:none;
-    
-    
 }
+
+@font-face{
+    font-family: 'TrebuchetMS';
+    src: url('Fonts/TrebuchetMS.ttf');
+    font-weight: normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family: 'BebasNeue';
+    src: url('Fonts/BebasNeue.otf');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family: "WebSymbolsRegular";
+    src: url('Fonts/websymbols-regular-webfont.eot');
+    src: url('Fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/websymbols-regular-webfont.woff') format('woff'),
+         url('Fonts/websymbols-regular-webfont.ttf') format('truetype'),
+         url('Fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+         font-weight: normal;
+         font-style: normal;
+}
+
+
+
+
+
 
 #container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 500px 1fr 150px 1fr 300px;
+    grid-template-rows: 530px 1fr 150px 1fr 300px;
     width:80%;
     grid-template-areas: 
     "header header header header header"
@@ -20,6 +48,7 @@
     height:2000px;
     margin:0px auto;
     background:rgba(250, 248, 248, 0.75);
+    
    
 }
 
@@ -32,40 +61,95 @@
     background-size:cover;
     background-repeat:repeat;
     background-position: center center;
+   
     
+}
+
+.icon{
+    font-family: "WebSymbolsRegular";
+    font-size:30px;
+    padding-bottom:10px;
+
+    animation-name: move-icon;
+    animation-duration: 1s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes move-icon{
+    0%{
+        transform: translateY(0%);
+    }
+    
+    50%{
+        transform: translateY(5px);
+    }
+    
+    100%{
+        transform: translateY(0%);
+    }
 }
 
 #header h1{
     justify-content:center;
     text-align:center;
     text-shadow: 0px 0px 5px gray;
-    font-size:35px;
-    text-decoration:underline;
-    padding:150px;
+    font-size:50px;
+    font-family: 'BebasNeue';
+    letter-spacing:3px;
+    line-height:530px;
+    margin-bottom:-85px;
     
 }
 
 .search{
-    
     text-align:center;
-    margin:10px;
-    justify-content:center;
-    height:80px;
-    background-color:rgba(70, 69, 69, 0.836);
-    margin-top:10px;
-    margin-bottom:10px;
-    opacity:1;
+    align-items:center;
+    border:1px solid #ccc;
+    height:60px;
+    background-color:white;
+    margin-left:15%;
+    line-height:40px;
+    width:70%;
+    background: rgba(61, 60, 60, 0.493)t;
+    
+}
+
+.search input[type="text"]{
+    width:60%;
+    height:30px;
+    margin-top:14px;
+    background:transparent;
+    color:#ccc;
+    transition:all 300ms;
+    border:1px solid #ccc;
     
     
+}
+.search input[type="text"]:focus{
+    color:#555;
+    font-size:15px;
+    
+}
+.search input[type="submit"]{
+    background-color:#E90E35;
+    color:white;
+    border:none;
+    height:32px;
+    width:80px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.search input[type="submit"]:hover{
+    background-color:#37bcf9;
     
 }
 
 #logo-social{
     display:block;
-    
     flex-basis:65%;
     justify-content: flex-start;
-
     flex-grow:1;
     flex-basis:65%;
     padding:10px;
@@ -89,58 +173,49 @@
 
 #menu{
     display:flex;
-    flex-basis:40%;
-    justify-content: flex-end;
+    flex-basis:100%;
+    justify-content: center;
     padding-right:20px;
     height:50px;
-    
-    
     
 }
 
  #menu > ul{
-    display:grid;
-    grid-template-columns: repeat(5, 1fr);
+    
     list-style:none;
     text-align:center;
     display:flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    background:transparent;
+    
 }
 
  #menu > ul > li{
     height:40px;
     line-height:40px;
-    transition: all 300ms;
-
-   
-    
-    
-}
-
-#menu > ul > li:hover{
-    transition: all 300ms;
-    background:lightgray;
-    
+    margin: 0px 50px 0px 50px;
+     
 }
 
  #menu > ul > li > a{
-    font-size:14px;
-    color: rgb(170, 168, 168);
+    color: white;
     text-transform:uppercase;
-   
     display:flex;
-    flex-direction: row;
-
+    font-family: 'BebasNeue';
+    font-size:22px;
+    transition: all 300ms;
+    text-decoration:none;
+    text-shadow: 0px 0px 4px #444;
     
+  
 }
 
 #menu > ul > li > a:hover{
-    color:black;
-    background:lightgray;
     box-shadow: 0px 0px 4px gray;
+    color:#37bcf9;
+    transform: scale(1.2, 1.2);
+    text-decoration:none;
     
 }
 
@@ -153,19 +228,6 @@
 
 #menu > ul > li:hover > ul{
     display:block;
-    background-color: #ccc;
-}
-
-
-#menu > ul > li:hover > ul > li > a{
-    color:black;
-    text-decoration:none;
-    text-transform:uppercase;
-    
-}
-
-#menu > ul > li:hover > ul > li a:hover{
-    color:#666666;
     
 }
 
@@ -175,6 +237,26 @@
     border-bottom:1px solid gray;
    
 }
+
+#menu > ul > li:hover > ul > li > a{
+    color: white;
+    text-transform:uppercase;
+    display:flex;
+    font-family: 'BebasNeue';
+    font-size:20px;
+    transition: all 300ms;
+    text-shadow: 0px 0px 4px #444;
+   
+    
+}
+
+#menu > ul > li:hover > ul > li a:hover{
+    color:#37bcf9;
+    text-decoration:none;
+    
+}
+
+
 
 
 
@@ -195,6 +277,11 @@
     margin-top:60px;
     margin-bottom:30px;
     text-align:center;
+    font-size:25px;
+    font-family: 'TrebuchetMS';
+    letter-spacing:3px;
+    text-shadow:0px 0px 4px white;
+    color:#E90E35;
     
     
 }
@@ -243,20 +330,25 @@ input[type="button"]{
     background-color:#E90E35;
     border-radius:10px;
     border:1px solid white;
-    width:120px;
+    width:155px;
     height:30px;
     
     transition:all 300ms;
     margin:10px;
     color:white;
     align-self:flex-end;
-    margin-left:85px;
+    margin-left:75px;
+
+    font-size:16px;
+    font-family: 'TrebuchetMS';
+    font-weight:bold;
+  
     
 
 }
 input[type="button"]:hover{
-    color:blue;
-    background-color:lightblue;
+    color:#37bcf9;
+    background-color:white;
     display:block;
     transform: scale(1.2, 1.2);
 }
