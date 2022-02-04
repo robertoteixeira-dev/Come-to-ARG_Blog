@@ -252,6 +252,7 @@
 #destination{
     grid-area:destination;
     margin-top:27px;
+    margin-bottom:30px;
     
 }
 
@@ -317,10 +318,12 @@ input[type="button"]:hover{
     grid-area:info;
     text-align:center;
     margin:30px;
-    border:2px solid #37bcf9;
-    height:auto;
+    height:250px;
     margin-right:15px;
-    margin-left:15px;   
+    margin-left:15px;  
+    line-height:auto;
+    border:1px solid gray;
+    
     
 }
 
@@ -333,6 +336,17 @@ input[type="button"]:hover{
 
 #reason{
     color:black;
+    display:inline-flex;
+    overflow:hidden;
+
+}
+
+#info #reasons .reason img{
+    width:70px;
+    height:70px;
+    color:black;
+  
+
 }
 
 #legend{
@@ -340,14 +354,12 @@ input[type="button"]:hover{
     
     font-weight:bold;
     font-family: 'BebasNeue';
-    font-size:18px;
+    font-size:25px;
     text-align:center;
     padding:5px;
-    
-    color:white;
-    background-color: #00538c;
+    color:#00538c;
     letter-spacing:3px;
-    text-shadow:0px 0px 3px #444;
+    text-shadow:0px 0px 3px white;
 }
 
 #articles{
