@@ -40,12 +40,12 @@
 #container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 530px 1fr 150px 1fr 300px;
+    grid-template-rows: 530px 1fr 1fr 1fr 100px;
     width:80%;
     grid-template-areas: 
     "header header header header header"
     "destination destination destination destination destination"
-    "text text text text text"
+    "info info info info info"
     "articles articles articles aside aside"
     "footer footer footer footer footer";
     height:2000px;
@@ -90,7 +90,6 @@
 }
 
 #header h1{
-    justify-content:center;
     text-align:center;
     text-shadow: 0px 0px 5px gray;
     font-size:50px;
@@ -268,42 +267,26 @@
      
 }
 
-.card-1{
+.card-1, .card-2, .card-3{
     display:inline-flex;
     width:300px;
     height:350px;
-    background-image: url("Img/Bariloche-Resort.jpeg");
     background-size:cover;
     background-repeat:no-repeat;
     overflow:hidden;
-    margin-right:20px;
-    margin-left:10px;
-   
+    margin-right:15px;
+    margin-left:15px;
+}
+.card-1{
+    background-image: url("Img/Bariloche-Resort.jpeg");
 }
 
 .card-2{
-    display:inline-flex;
-    width:300px;
-    height:350px;
     background-image: url("Img/BuenosAires.jpg");
-    background-size:cover;
-    background-repeat:no-repeat;
-    overflow:hidden;
-    margin-right:20px;
-    margin-left:10px;
-   
 }
 
 .card-3{
-    display:inline-flex;
-    width:300px;
-    height:350px;
     background-image: url("Img/Blog-Catena-Zapata-Vineyard-Andes-Mendoza.jpg");
-    background-size:cover;
-    background-repeat:no-repeat;
-    overflow:hidden;
-    margin-right:20px;
-    margin-left:10px;
 }
 
 
@@ -327,21 +310,48 @@ input[type="button"]{
 input[type="button"]:hover{
     color:#37bcf9;
     background-color:white;
-    display:block;
     transform: scale(1.2, 1.2);
 }
 
-
-#text{
-    grid-area:text;
+#info{
+    grid-area:info;
     text-align:center;
-    margin:20px;
+    margin:30px;
+    border:2px solid #37bcf9;
+    height:auto;
+    margin-right:15px;
+    margin-left:15px;   
     
+}
+
+#reasons{
+    text-align:center;
+    display:flex;
+    flex-basis:30%;
+    
+}
+
+#reason{
+    color:black;
+}
+
+#legend{
+    display:block;
+    
+    font-weight:bold;
+    font-family: 'BebasNeue';
+    font-size:18px;
+    text-align:center;
+    padding:5px;
+    
+    color:white;
+    background-color: #00538c;
+    letter-spacing:3px;
+    text-shadow:0px 0px 3px #444;
 }
 
 #articles{
     grid-area:articles;
-    
 }
 
 #articles h2{
@@ -436,7 +446,6 @@ input[type="button"]:hover{
     font-family: 'BebasNeue';
     font-size:20px;
     letter-spacing:3px;
-   
 }
 
 @keyframes Move-more{
@@ -459,11 +468,126 @@ input[type="button"]:hover{
 
 #aside{
     grid-area:aside;
-    background-color:#26353c81;
+    padding:5px;
+    background-image: linear-gradient(to right,#E90E35, #37bcf9);
   
+}
+
+#aside h3{
+    background-color: #37bcf9;
+    border:1px solid white;
+    height:40px;
+    line-height:40px;
+    width:90%;
+    text-align:center;
+    color:white;
+    font-family: 'BebasNeue';
+    box-shadow:0px 1px 0px #E90E35 , 1px 2px 0px #E90E35 , 2px 3px 0px #E90E35 , 3px 4px 0px #E90E35 ;
+    margin:0px auto;
+    margin-bottom:15px;
+    font-size:25px;
+    letter-spacing:2px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#message{
+    display:block;
+    margin:0px auto;
+    margin-top:20px;
+    margin-left:20px;
+    font-size: 'TrebuchetMS';
+    font-size:15px;
+    border:none;
+    width:90%;
+    height:40px;
+    background: none;
+    border:none;
+    border-bottom:1px solid lightgray;
+    outline:none;
+}
+
+#contact input[type="submit"]{
+    background-color:#E90E35;
+    border:1px solid white;
+    width:100px;
+    height:30px;
+    border-radius:10px;
+    font-size:16px;
+    font-family: 'TrebuchetMS';
+    font-weight:bold;
+    cursor:pointer;
+    text-transform:uppercase;
+    color:white;
+    margin:20px;
+    display:block;
+    line-height:30px;
+    margin-left:35%;
+}
+
+#contact input[type="submit"]:hover{
+    background-color:#37bcf9;
+}
+
+#social a{
+    display:block;
+    text-decoration:none;
+    color:#333;
+    margin-left:50px;
+    margin-top:25px;
+    margin-bottom:20px;
+
+}
+
+#social .overlay{
+    display:block;
+    height:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size:15px;
+    letter-spacing:1px;
+    text-shadow: 0px 0px 1px #ccc;
+    border:1px solid white;
+    box-shadow:0px 0px 4px #ccc;
+    background: #E90E35;
+    color:white;
+    position:absolute;
+    padding:5px;
+    margin-left:120px;
+    margin-top:-60px;
+    cursor:pointer;
+    transform:translateX(-80%);
+    opacity:0;
+    transition: all 400ms;
+}
+
+#social div:hover .overlay{
+    opacity:1;
+    transform: translateX(0%);
+}
+
+#aside #social img{
+    width:45px;
+    height:45px;
 }
 
 #footer{
     grid-area:footer;
-    background-color: gray;
+    background: #161C1A;
+}
+
+#footer p{
+    color:white;
+    text-align:center;
+    margin-top:10px;
+}
+
+#footer #info{
+    text-align:center;
+    margin:10px;
+}
+
+#footer #info p{
+    margin:5px;
+    font-family: 'TrebuchetMS'
 }
