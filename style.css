@@ -29,13 +29,10 @@
          font-style: normal;
 }
 
-
 .clearfix{
     clear:both;
     float:none;
 }
-
-
 
 #container{
     display: grid;
@@ -51,8 +48,6 @@
     height:2000px;
     margin:0px auto;
     background:rgba(250, 248, 248, 0.75);
-    
-   
 }
 
 #header{
@@ -97,7 +92,6 @@
     letter-spacing:3px;
     line-height:530px;
     margin-bottom:-85px;
-    
 }
 
 .search{
@@ -122,13 +116,11 @@
     transition:all 300ms;
     border:1px solid #ccc;
     background:white;
-    
 }
 
 .search input[type="text"]:focus{
     color:#555;
     font-size:15px;
-    
 }
 .search input[type="submit"]{
     background-color:#E90E35;
@@ -143,7 +135,6 @@
 
 .search input[type="submit"]:hover{
     background-color:#37bcf9;
-    
 }
 
 #logo-social{
@@ -153,44 +144,35 @@
     flex-grow:1;
     flex-basis:65%;
     padding:10px;
-    margin-left:20px;
-    
-    
+    margin-left:20px; 
 }
 
 .logo{
     text-align:start;
     align-items:flex-start;
     justify-content: flex-start;
-    
 }
 
 #menu{
     display:flex;
-    flex-basis:100%;
     justify-content: center;
     padding-right:20px;
     height:50px;
-    
-    
 }
 
  #menu > ul{
-    
     list-style:none;
     text-align:center;
     display:flex;
     flex-wrap: wrap;
     align-items: center;
     background:transparent;
-    
 }
 
  #menu > ul > li{
     height:40px;
     line-height:40px;
     margin: 0px 50px 0px 50px;
-     
 }
 
  #menu > ul > li > a{
@@ -216,14 +198,12 @@
     list-style:none;
 }
 
-
 #menu > ul > li:hover > ul{
     display:block;
 }
 
 #menu > ul > li:hover > ul > li{
     border-bottom:1px solid gray;
-   
 }
 
 #menu > ul > li:hover > ul > li > a{
@@ -241,57 +221,77 @@
     color:#37bcf9;
 }
 
-
-
-
-
-#content{
-    display:grid;
-}
-
 #destination{
     grid-area:destination;
     margin-top:27px;
     margin-bottom:30px;
-    
+    border:1px solid gray;
+    height:520px;
+    width:935px;
+    margin-left:30px;
 }
 
 #destination h2{
-    margin-top:50px;
+    margin-top:30px;
     margin-bottom:30px;
     text-align:center;
     font-size:25px;
     font-family: 'TrebuchetMS';
     letter-spacing:3px;
     text-shadow:0px 0px 4px white;
-    color:#E90E35;
-     
+    color:#E90E35; 
 }
 
-.card-1, .card-2, .card-3{
+#places{
     display:inline-flex;
-    width:300px;
+    margin-left:13px;
+}
+
+#content{
+    border:1px solid gray;
     height:350px;
-    background-size:cover;
-    background-repeat:no-repeat;
+    width:270px;
     overflow:hidden;
-    margin-right:15px;
-    margin-left:15px;
-}
-.card-1{
-    background-image: url("Img/Bariloche-Resort.jpeg");
+    justify-content:center;
+    margin:15px;
 }
 
-.card-2{
-    background-image: url("Img/BuenosAires.jpg");
+#slides input{
+    display:none;
 }
 
-.card-3{
-    background-image: url("Img/Blog-Catena-Zapata-Vineyard-Andes-Mendoza.jpg");
+#slides{
+    width:300%;
+    height:100%;
+    display:flex;
+    animation: cambio 15s infinite;
+}
+
+.slide{
+    width:33.33%;
+    transition: .5s;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+        
+    25%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+
+    75%{margin-left: -100%;}
+
+    100%{margin-left: 0;}
+}
+
+.slide img{
+    width:100%;
+    height:100%;
 }
 
 
-input[type="button"]{
+#destination input[type="button"]{
+    position:absolute;
     background-color:#E90E35;
     border-radius:10px;
     border:1px solid white;
@@ -299,6 +299,7 @@ input[type="button"]{
     height:30px;
     transition:all 300ms;
     margin:10px;
+    transform: translate(-10%, -170%);
     color:white;
     align-self:flex-end;
     margin-left:75px;
@@ -308,53 +309,55 @@ input[type="button"]{
     cursor:pointer;
 }
 
-input[type="button"]:hover{
+#destination input[type="button"]:hover{
     color:#37bcf9;
     background-color:white;
-    transform: scale(1.2, 1.2);
 }
 
 #info{
     grid-area:info;
     text-align:center;
-    margin:30px;
+    margin:20px;
     height:250px;
     margin-right:15px;
     margin-left:15px;  
     line-height:auto;
-    border:1px solid gray;
-    
-    
+    border:1px solid gray; 
 }
 
 #reasons{
     text-align:center;
-    display:flex;
-    flex-basis:30%;
-    
-}
-
-#reason{
-    color:black;
+    justify-content:center;
     display:inline-flex;
-    overflow:hidden;
-
+    margin: 30px;
 }
 
-#info #reasons .reason img{
-    width:70px;
-    height:70px;
+.reason{
+    margin: 0px 80px 0px 80px;
+}
+
+.reason .icon {
+    color:#37bcf9;
+}
+
+.reason h4{
+    color:#00538c;
+    font-weight:bold;
+    font-family: 'TrebuchetMS';
+    font-size:18px;
+    letter-spacing:3px;
+    width:200px;
+}
+.reason p{
     color:black;
-  
-
 }
+
 
 #legend{
     display:block;
-    
     font-weight:bold;
     font-family: 'BebasNeue';
-    font-size:25px;
+    font-size:27px;
     text-align:center;
     padding:5px;
     color:#00538c;
@@ -482,7 +485,6 @@ input[type="button"]:hover{
     grid-area:aside;
     padding:5px;
     background-image: linear-gradient(to right,#E90E35, #37bcf9);
-  
 }
 
 #aside h3{
@@ -548,7 +550,6 @@ input[type="button"]:hover{
     margin-left:50px;
     margin-top:25px;
     margin-bottom:20px;
-
 }
 
 #social .overlay{
