@@ -29,16 +29,11 @@
          font-style: normal;
 }
 
-.clearfix{
-    clear:both;
-    float:none;
-}
 
 #container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 530px 1fr 1fr 1fr 70px;
-    width:80%;
     grid-template-areas: 
     "header header header header header"
     "destination destination destination destination destination"
@@ -110,7 +105,7 @@
 .search input[type="text"]{
     width:60%;
     height:30px;
-    margin-top:14px;
+    margin-top:18px;
     background:transparent;
     color:#ccc;
     transition:all 300ms;
@@ -137,22 +132,6 @@
     background-color:#37bcf9;
 }
 
-#logo-social{
-    display:block;
-    flex-basis:65%;
-    justify-content: flex-start;
-    flex-grow:1;
-    flex-basis:65%;
-    padding:10px;
-    margin-left:20px; 
-}
-
-.logo{
-    text-align:start;
-    align-items:flex-start;
-    justify-content: flex-start;
-}
-
 #menu{
     display:flex;
     justify-content: center;
@@ -172,7 +151,7 @@
  #menu > ul > li{
     height:40px;
     line-height:40px;
-    margin: 0px 50px 0px 50px;
+    margin: 0px 70px 0px 70px;
 }
 
  #menu > ul > li > a{
@@ -225,11 +204,10 @@
 
 #destination{
     grid-area:destination;
-    margin-top:27px;
-    margin-bottom:30px;
-    height:520px;
-    width:935px;
+    margin-top:30px;
+    margin-bottom:50px;
     margin-left:30px;
+    height:520px; 
 }
 
 #destination h2{
@@ -245,16 +223,19 @@
 
 #places{
     display:inline-flex;
-    margin-left:13px;
+    position: absolute;
+    transform: translate(9%,1%);
 }
 
-#content{
+#content{ 
     border:1px solid gray;
+    box-shadow:0px 0px 3px #444;
     height:350px;
     width:270px;
     overflow:hidden;
     justify-content:center;
-    margin:15px;
+    align-self:center;
+    margin:30px;
 }
 
 #slides input{
@@ -321,9 +302,7 @@
     height:250px;
     margin-right:15px;
     margin-left:15px;  
-    line-height:auto;
     margin-bottom:60px;
-    margin-top:-20px;
 }
 
 #reasons{
@@ -334,12 +313,13 @@
 }
 
 .reason{
-    margin: 0px 40px 0px 40px;
+    margin: 0px 50px 0px 50px;
 }
 
 .reason .icon {
     color:#37bcf9;
     font-size:35px;
+    
 }
 
 .reason h4{
@@ -348,18 +328,15 @@
     font-family: 'TrebuchetMS';
     font-size:18px;
     letter-spacing:3px;
-    margin:10px;
-    width:200px;
-   
-    
+    margin:10px; 
 }
+
 .reason p{
     color:#444;
     font-size:15px;
     font-family: 'TrebuchetMS';
     margin:10px;
 }
-
 
 #legend{
     display:block;
@@ -388,37 +365,36 @@
     font-family: 'BebasNeue';
     box-shadow:0px 1px 0px #37bcf9, 1px 2px 0px #37bcf9, 2px 3px 0px #37bcf9, 3px 4px 0px #37bcf9;
     margin:0px auto;
-    margin-bottom:15px;
+    margin-bottom:25px;
     font-size:30px;
     letter-spacing:2px;
 }
 
 #articles article{
     width:90%;
-    height:150px;
+    height:auto;
     border:1px solid #ccc;
-    margin:20px;
+    margin:20px auto;
     overflow:hidden;
     padding:10px;
     font-family: 'TrebuchetMS';
     background: white;
     color:black;
     box-shadow:1px 1px 2px solid #ddd;
-    margin-left:20px;
+    
 }
 
 #articles article h4{
-    font-size:18px;
+    display:block;
+    font-size:16px;
     margin:3px;
-    text-align:left;
-    margin-left:5px;
-    display:block; 
-    transition:all 300ms;
+    margin-top:20px;
+    margin-bottom:10px;
 }
 
 #articles article h4 a{
     text-decoration:none;
-    color:#00538c;
+    color:#00538c;  
 }
 
 #articles article h4 a:hover{
@@ -427,31 +403,31 @@
 
 #articles article p{
     margin-top:10px;
-    margin-bottom:10px;
-    font-size:15px;
-    display: block;  
+    margin-bottom:30px;
+    font-size:14px;
+     
 }
 
-#articles .data{
-    display:block;
+#articles .date{
+    float:right;
     background:#393d3f;
     color:white;
-    height:20px;
-    line-height:20px;
-    font-size:13px;
-    border-radius: 5px 0px 0px 0px;
-    width:250px;
-    float:inline-end;
-    margin-right:-10px;
+    height:15px;
+    line-height:15px;
+    margin:-10px;
+    padding:4px;
+    font-size:12px;
+    border-radius: 0px 0px 0px 5px;
+    margin-bottom:20px;
 }
 
-#articles .data span{
+#articles .date span{
     margin:5px;
 }
 
 .image{
     float:left;
-    width:250px;
+    width:200px;
     height:150px;
     margin-right:5px;
 }
@@ -544,7 +520,7 @@
     margin:20px;
     display:block;
     line-height:30px;
-    margin-left:35%;
+    margin-left:40%;
 }
 
 #contact input[type="submit"]:hover{
@@ -611,4 +587,103 @@
 #footer #info p{
     margin:5px;
     font-family: 'TrebuchetMS'
+}
+
+/*RESPONSIVE WEB DESIGN*/
+
+
+@media (max-width: 575.98px){
+
+  
+
+}
+
+
+@media (max-width: 767.98px) {
+#container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 530px 1000px 800px 1fr 1fr 70px;
+    grid-template-areas: 
+    "header header header header header"
+    "destination destination destination destination destination"
+    "info info info info info"
+    "articles articles articles articles articles"
+    "aside aside aside aside aside"  
+    "footer footer footer footer footer";
+    height:auto;
+    margin:0px auto;
+    background:rgba(250, 248, 248, 0.75);
+}
+
+#menu > ul > li{
+    margin: 0px 50px 0px 50px;
+}
+
+}
+
+
+@media (max-width: 991.98px) {
+
+#destination{
+    margin-top:50px;
+    
+}
+
+#places{
+    margin:0px auto;
+    right:18%;
+}
+
+#content{
+    margin:50px;
+   
+} 
+
+.reason h4{
+    font-size:16px;
+}
+
+.reason p{
+    font-size:14px;
+}
+
+
+#articles article h4{
+    font-size:14px;
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+#articles article p{
+    font-size:12px;
+    margin-top:-20px;
+    text-align:center;
+}
+
+}
+
+
+@media (max-width: 1199.98px) {
+
+#places{
+    display:inline-flex;
+    margin-left:-85px;
+}
+
+#content{
+    margin:25px;
+} 
+}
+
+@media (max-width: 1399.98px) {
+   
+#places{
+    position: absolute;
+    transform: translate(18%,1%);
+}
+
 }
