@@ -1,4 +1,9 @@
 
+<div align="center" >
+  <img src="./Gif/Web.gif" alt="demo-web" height="425">
+  <img src="./Gif/Responsive-Phone.gif" alt="demo-web" height="425">
+</div>
+
 ## 🚀 Technologies
 
 This project was developed with the following technologies:
