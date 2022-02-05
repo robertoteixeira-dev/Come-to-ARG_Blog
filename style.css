@@ -29,7 +29,6 @@
          font-style: normal;
 }
 
-
 #container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -381,7 +380,6 @@
     background: white;
     color:black;
     box-shadow:1px 1px 2px solid #ddd;
-    
 }
 
 #articles article h4{
@@ -405,7 +403,7 @@
     margin-top:10px;
     margin-bottom:30px;
     font-size:14px;
-     
+    color: #666666;
 }
 
 #articles .date{
@@ -589,21 +587,57 @@
     font-family: 'TrebuchetMS'
 }
 
+
+
 /*RESPONSIVE WEB DESIGN*/
 
+@media (max-width: 428px){
 
-@media (max-width: 575.98px){
+#header h1{
+    font-size:35px;
+}
 
-  
+#menu{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#places{
+    position:absolute;
+    transform:translate(51%)!important;
+}
+
 
 }
 
+
+
+
+@media (max-width: 575.98px){
+#destination{
+    margin:0px auto;
+}
+
+#places{
+    position:absolute;
+    transform:translate(5%)!important;
+}
+
+#menu > ul > li{
+    margin: 0px 35px 0px 35px !important;
+}
+
+#menu{
+    justify-content:flex-start;
+}
+
+}
 
 @media (max-width: 767.98px) {
 #container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 530px 1000px 800px 1fr 1fr 70px;
+    grid-template-rows: 530px 1680px 580px 1fr 1fr 70px;
     grid-template-areas: 
     "header header header header header"
     "destination destination destination destination destination"
@@ -613,21 +647,140 @@
     "footer footer footer footer footer";
     height:auto;
     margin:0px auto;
-    background:rgba(250, 248, 248, 0.75);
 }
 
 #menu > ul > li{
     margin: 0px 50px 0px 50px;
 }
 
+#destination{
+    margin:0px auto;
+    height:auto; 
 }
 
+#destination h2{
+    font-size:20px;
+}
+
+#places{
+    flex-wrap:wrap;
+    flex-direction:row;
+    position: fixed;
+}
+
+#content{ 
+    height:450px;
+    width:350px;
+    display:block;
+    transform: translate(40%,-5%);
+}
+
+#destination input[type="button"]{
+    width:180px;
+    height:35px;
+    transform: translate(12%, -180%);
+    font-size:18px;
+}
+
+#info{
+    grid-area:info;
+    text-align:center;
+    margin:0px auto;
+    height:auto;
+}
+
+#reasons{
+    flex-wrap:wrap;
+    flex-direction:row;
+    margin: 30px;
+}
+
+.reason{
+    margin-top:20px;
+}
+
+#articles{
+    margin-bottom:20px;
+}
+}
+
+
+@media (max-width: 810px){
+    #container{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 530px 1680px 580px 1fr 1fr 70px;
+        grid-template-areas: 
+        "header header header header header"
+        "destination destination destination destination destination"
+        "info info info info info"
+        "articles articles articles articles articles"
+        "aside aside aside aside aside"  
+        "footer footer footer footer footer";
+        height:auto;
+        margin:0px auto;
+    }
+
+    #menu > ul > li{
+        margin: 0px 50px 0px 50px;
+    }
+    
+    #destination{
+        margin:0px auto;
+        height:auto; 
+    }
+    
+    #destination h2{
+        font-size:20px;
+    }
+    
+    #places{
+        flex-wrap:wrap;
+        flex-direction:row;
+        position: fixed;
+    }
+    
+    #content{ 
+        height:450px;
+        width:350px;
+        display:block;
+        transform: translate(40%,-5%);
+    }
+    
+    #destination input[type="button"]{
+        width:180px;
+        height:35px;
+        transform: translate(12%, -180%);
+        font-size:18px;
+    }
+    
+    #info{
+        grid-area:info;
+        text-align:center;
+        margin:0px auto;
+        height:auto;
+    }
+    
+    #reasons{
+        flex-wrap:wrap;
+        flex-direction:row;
+        margin: 30px;
+    }
+    
+    .reason{
+        margin-top:20px;
+    }
+    
+    #articles{
+        margin-bottom:20px;
+    }
+
+}
 
 @media (max-width: 991.98px) {
 
 #destination{
     margin-top:50px;
-    
 }
 
 #places{
@@ -637,7 +790,6 @@
 
 #content{
     margin:50px;
-   
 } 
 
 .reason h4{
@@ -647,7 +799,6 @@
 .reason p{
     font-size:14px;
 }
-
 
 #articles article h4{
     font-size:14px;
@@ -666,6 +817,24 @@
 
 }
 
+@media (max-width: 1250px){
+
+#places{
+    margin:0px auto;
+    display:inline-flex;
+    margin-left:-85px;
+}  
+
+}
+
+@media (max-width: 1024px){
+
+#places{
+    margin:0px auto;
+    right:20%;
+}
+    
+}
 
 @media (max-width: 1199.98px) {
 
@@ -677,6 +846,7 @@
 #content{
     margin:25px;
 } 
+
 }
 
 @media (max-width: 1399.98px) {
