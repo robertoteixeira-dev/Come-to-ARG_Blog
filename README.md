@@ -1,7 +1,9 @@
 
+<p align="center">Blog about tourism in Argentina.</p>
+
 <div align="center" >
   <img src="./Gif/Web.gif" alt="demo-web" height="425">
-  <img src="./Gif/Responsive-Phone.gif" alt="demo-web-phone" height="425">
+  <img src="./Gif/Phone.gif" alt="demo-web-phone" height="425">
 </div>
 
 ## 🚀 Technologies
