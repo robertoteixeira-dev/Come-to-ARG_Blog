@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-  Welcome to the project: # Come to ARG
+  Welcome to the project: Come to ARG
 <br>
 </h1>
 
@@ -12,13 +12,11 @@
 
 <br>
 
-# 📲 See how the project look on a cell phone screen
+## 📲 See how the project look on a cell phone screen
 
 <div align="center" >
   <img src="./Gif/Phone.gif" alt="demo-web-phone" height="425">
 </div>
-
----
 
 ## 🚀 Technologies
 
@@ -27,5 +25,7 @@ This project was developed with the following technologies:
 - ✔️ HTML5
 
 - ✔️ CSS3: Flexbox, Grid and Responsive Web Design
+
+---
 
 Made with 💜 by Roberto Teixeira 👋 [See my linkedin](https://www.linkedin.com/in/roberto-teixeira-developer/)
