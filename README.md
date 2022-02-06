@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-  Welcome to the project: # COME TO ARG
+  Welcome to the project: # Come to ARG
 <br>
 </h1>
 
@@ -12,8 +12,9 @@
 
 <br>
 
+# 📲 See how the project look on a cell phone screen
+
 <div align="center" >
-# See the web on a phone 
   <img src="./Gif/Phone.gif" alt="demo-web-phone" height="425">
 </div>
 
