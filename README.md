@@ -18,6 +18,14 @@
   <img src="./Gif/Phone.gif" alt="demo-web-phone" height="425">
 </div>
 
+## ✔️ Come to try out the webpage
+
+<p align="center">
+  <a href="https://cometoarg.netlify.app/" target="_blank">
+    <img alt="Demo on Netlify" src="https://res.cloudinary.com/lukemorales/image/upload/v1599785319/readme_logos/demo_on_netlify_umjmch.png">
+  </a>
+</p>
+
 ## 🚀 Technologies
 
 This project was developed with the following technologies:
