@@ -205,7 +205,7 @@
     grid-area:destination;
     margin-top:30px;
     margin-bottom:50px;
-    margin-left:30px;
+ 
     height:520px; 
 }
 
@@ -221,10 +221,9 @@
 }
 
 #places{
-    display:inline-flex;
-    position: absolute;
-    transform: translate(9%,1%);
- 
+    display:flex;
+    justify-content:center;
+    
 }
 
 #content{ 
@@ -233,9 +232,8 @@
     height:350px;
     width:270px;
     overflow:hidden;
-    justify-content:center;
     align-self:center;
-    margin:30px;
+    margin:25px;
 }
 
 #slides input{
@@ -618,10 +616,6 @@
     top:25%;
 }
 
-#places{
-    position:absolute;
-    right:40% !important;
-}
 
 #articles{
     position:relative;
@@ -647,15 +641,9 @@
 
 }
 
-@media (max-width: 575.98px){
-#destination{
-    margin:0px auto;
-}
 
-#places{
-    position:absolute;
-    transform:translate(5%)!important;
-}
+@media (max-width: 575.98px){
+
 
 #menu > ul > li{
     margin: 0px 35px 0px 35px !important;
@@ -668,52 +656,9 @@
 }
 
 @media (max-width: 767.98px) {
-#container{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 530px 1680px 580px 1fr 1fr 70px;
-    grid-template-areas: 
-    "header header header header header"
-    "destination destination destination destination destination"
-    "info info info info info"
-    "articles articles articles articles articles"
-    "aside aside aside aside aside"  
-    "footer footer footer footer footer";
-    height:auto;
-    margin:0px auto;
-}
 
 #menu > ul > li{
     margin: 0px 50px 0px 50px;
-}
-
-#destination{
-    margin:0px auto;
-    height:auto; 
-}
-
-#destination h2{
-    font-size:20px;
-}
-
-#places{
-    flex-wrap:wrap;
-    flex-direction:row;
-    position: fixed;
-}
-
-#content{ 
-    height:450px;
-    width:350px;
-    display:block;
-    transform: translate(40%,-5%);
-}
-
-#destination input[type="button"]{
-    width:180px;
-    height:35px;
-    transform: translate(12%, -180%);
-    font-size:18px;
 }
 
 #info{
@@ -760,25 +705,23 @@
 }
     
 #destination{
-    margin:0px auto;
+    
     height:auto; 
 }
     
 #destination h2{
-    font-size:20px;
+    font-size:21px;
+    margin-top:30px;
 }
     
 #places{
     flex-wrap:wrap;
-    flex-direction:row;
-    position: fixed;
 }
     
 #content{ 
     height:450px;
     width:350px;
-    display:block;
-    transform: translate(40%,-5%);
+    margin:30px;
 }
     
 #destination input[type="button"]{
@@ -817,19 +760,6 @@
 
 @media (max-width: 991.98px) {
 
-#destination{
-    margin-top:50px;
-}
-
-#places{
-    margin:0px auto;
-    right:18%;
-}
-
-#content{
-    margin:50px;
-} 
-
 .reason h4{
     font-size:16px;
 }
@@ -849,50 +779,41 @@
 
 #articles article p{
     font-size:12px;
-    margin-top:-20px;
+    margin-top:-15px;
     text-align:center;
 }
 
 }
 
-@media (max-width: 1250px){
-
-#places{
-    margin:0px auto;
-    display:inline-flex;
-    margin-left:-85px;
-}  
-
-}
-
-@media (max-width: 1024px){
-
-#places{
-    margin:0px auto;
-    right:20%;
-}
-    
-}
-
 @media (max-width: 1199.98px) {
 
 #places{
-    display:inline-flex;
-    margin-left:-85px;
+    display:flex;
+    justify-content:center;
+    line-height:520px;
+    margin:0px auto;
 }
-
-#content{
-    margin:25px;
-} 
 
 }
 
 @media (max-width: 1399.98px) {
-   
-#places{
-    position: absolute;
-    transform: translate(18%,1%);
+
+#articles article h4{
+    font-size:16px;
+    text-align:center;
+    padding-top:15px;
+    padding-bottom:10px;
+    padding-left:5px;
+    padding-right:5px;
+    width:100%;
 }
+
+
+#places{
+    display:flex;
+    justify-content:center;
+}
+
 
 }
 
